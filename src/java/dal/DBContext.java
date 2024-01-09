@@ -15,9 +15,7 @@ import java.sql.Statement;
  */
 public class DBContext {
     
-    private static String DB_URL = "jdbc:mysql://localhost:3306/online_shop";
-    private static String USER_NAME = "root";
-    private static String PASSWORD = "123456";
+   
  
     /**
      * main
