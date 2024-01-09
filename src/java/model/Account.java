@@ -9,18 +9,19 @@ package model;
  * @author admin
  */
 public class Account {
-    private int userId;
     private String accountName;
     private String password;
+    private int userId;
 
     public Account() {
     }
 
-    public Account(int userId, String accountName, String password) {
-        this.userId = userId;
+    public Account(String accountName, String password, int userId) {
         this.accountName = accountName;
         this.password = password;
+        this.userId = userId;
     }
+
 
     public int getUserId() {
         return userId;

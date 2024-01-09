@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.sql.Date;
+
 /**
  *
  * @author admin
@@ -12,23 +14,26 @@ public class Post {
     private int postId;
     private String postTitle;
     private String content;
+    private Date time;
     private int blogId;
     private int userId;
 
     public Post() {
     }
 
-    public Post(int postId, String postTitle, String content, int blogId, int userId) {
+    public Post(int postId, String postTitle, String content, Date time, int blogId, int userId) {
         this.postId = postId;
         this.postTitle = postTitle;
         this.content = content;
+        this.time = time;
         this.blogId = blogId;
         this.userId = userId;
     }
 
-    public Post(String postTitle, String content, int blogId, int userId) {
+    public Post(String postTitle, String content, Date time, int blogId, int userId) {
         this.postTitle = postTitle;
         this.content = content;
+        this.time = time;
         this.blogId = blogId;
         this.userId = userId;
     }
@@ -57,6 +62,14 @@ public class Post {
         this.content = content;
     }
 
+    public Date getTime() {
+        return time;
+    }
+
+    public void setTime(Date time) {
+        this.time = time;
+    }
+
     public int getBlogId() {
         return blogId;
     }
@@ -72,4 +85,6 @@ public class Post {
     public void setUserId(int userId) {
         this.userId = userId;
     }
+
+    
 }

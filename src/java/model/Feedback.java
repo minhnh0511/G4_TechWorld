@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.sql.Date;
+
 /**
  *
  * @author admin
@@ -13,22 +15,27 @@ public class Feedback {
     private int userId;
     private String content;
     private int ratedStar;
+    private Date time;
+
 
     public Feedback() {
     }
 
-    public Feedback(int feedbackId, int userId, String content, int ratedStar) {
+    public Feedback(int feedbackId, int userId, String content, int ratedStar, Date time) {
         this.feedbackId = feedbackId;
         this.userId = userId;
         this.content = content;
         this.ratedStar = ratedStar;
+        this.time = time;
     }
 
-    public Feedback(int userId, String content, int ratedStar) {
+    public Feedback(int userId, String content, int ratedStar, Date time) {
         this.userId = userId;
         this.content = content;
         this.ratedStar = ratedStar;
+        this.time = time;
     }
+
 
     public int getFeedbackId() {
         return feedbackId;
@@ -60,6 +67,15 @@ public class Feedback {
 
     public void setRatedStar(int ratedStar) {
         this.ratedStar = ratedStar;
+    }
+    
+    
+    public Date getTime() {
+        return time;
+    }
+
+    public void setTime(Date time) {
+        this.time = time;
     }
 
 }

@@ -11,23 +11,23 @@ package model;
 public class Category {
     private int categoryId;
     private String categoryName;
-    private String text;
-    private String picture;
+    private String description;
+    private String image;
 
     public Category() {
     }
 
-    public Category(int categoryId, String categoryName, String text, String picture) {
+    public Category(int categoryId, String categoryName, String description, String image) {
         this.categoryId = categoryId;
         this.categoryName = categoryName;
-        this.text = text;
-        this.picture = picture;
+        this.description = description;
+        this.image = image;
     }
 
-    public Category(String categoryName, String text, String picture) {
+    public Category(String categoryName, String description, String image) {
         this.categoryName = categoryName;
-        this.text = text;
-        this.picture = picture;
+        this.description = description;
+        this.image = image;
     }
 
     public int getCategoryId() {
@@ -46,19 +46,21 @@ public class Category {
         this.categoryName = categoryName;
     }
 
-    public String getText() {
-        return text;
+    public String getDescription() {
+        return description;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public String getPicture() {
-        return picture;
+    public String getImage() {
+        return image;
     }
 
-    public void setPicture(String picture) {
-        this.picture = picture;
+    public void setImage(String image) {
+        this.image = image;
     }
+
+    
 }

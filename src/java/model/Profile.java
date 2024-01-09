@@ -10,18 +10,27 @@ package model;
  */
 public class Profile {
     private int userId;
+    private boolean gender;
     private String phone;
     private String address;
-    private String photo;
+    private String image;
 
     public Profile() {
     }
 
-    public Profile(int userId, String phone, String address, String photo) {
+    public Profile(int userId, boolean gender, String phone, String address, String image) {
         this.userId = userId;
+        this.gender = gender;
         this.phone = phone;
         this.address = address;
-        this.photo = photo;
+        this.image = image;
+    }
+
+    public Profile(boolean gender, String phone, String address, String image) {
+        this.gender = gender;
+        this.phone = phone;
+        this.address = address;
+        this.image = image;
     }
 
     public int getUserId() {
@@ -30,6 +39,14 @@ public class Profile {
 
     public void setUserId(int userId) {
         this.userId = userId;
+    }
+
+    public boolean isGender() {
+        return gender;
+    }
+
+    public void setGender(boolean gender) {
+        this.gender = gender;
     }
 
     public String getPhone() {
@@ -48,11 +65,13 @@ public class Profile {
         this.address = address;
     }
 
-    public String getPhoto() {
-        return photo;
+    public String getImage() {
+        return image;
     }
 
-    public void setPhoto(String photo) {
-        this.photo = photo;
+    public void setImage(String image) {
+        this.image = image;
     }
+
+    
 }

@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.sql.Date;
+
 /**
  *
  * @author admin
@@ -12,23 +14,27 @@ public class Blog {
     private int blogId;
     private String title;
     private String content;
+    private Date time;
     private int userId;
 
     public Blog() {
     }
 
-    public Blog(int blogId, String title, String content, int userId) {
+    public Blog(int blogId, String title, String content, Date time, int userId) {
         this.blogId = blogId;
         this.title = title;
         this.content = content;
+        this.time = time;
         this.userId = userId;
     }
 
-    public Blog(String title, String content, int userId) {
+    public Blog(String title, String content, Date time, int userId) {
         this.title = title;
         this.content = content;
+        this.time = time;
         this.userId = userId;
     }
+
 
     public int getBlogId() {
         return blogId;

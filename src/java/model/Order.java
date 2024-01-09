@@ -13,7 +13,6 @@ import java.sql.Date;
 public class Order {
     private int orderId;
     private Date orderDate;
-    private String shipAddress;
     private int deliveryId;
     private int userId;
     private int state;
@@ -21,18 +20,16 @@ public class Order {
     public Order() {
     }
 
-    public Order(int orderId, Date orderDate, String shipAddress, int deliveryId, int userId, int state) {
+    public Order(int orderId, Date orderDate, int deliveryId, int userId, int state) {
         this.orderId = orderId;
         this.orderDate = orderDate;
-        this.shipAddress = shipAddress;
         this.deliveryId = deliveryId;
         this.userId = userId;
         this.state = state;
     }
 
-    public Order(Date orderDate, String shipAddress, int deliveryId, int userId, int state) {
+    public Order(Date orderDate, int deliveryId, int userId, int state) {
         this.orderDate = orderDate;
-        this.shipAddress = shipAddress;
         this.deliveryId = deliveryId;
         this.userId = userId;
         this.state = state;
@@ -52,14 +49,6 @@ public class Order {
 
     public void setOrderDate(Date orderDate) {
         this.orderDate = orderDate;
-    }
-
-    public String getShipAddress() {
-        return shipAddress;
-    }
-
-    public void setShipAddress(String shipAddress) {
-        this.shipAddress = shipAddress;
     }
 
     public int getDeliveryId() {

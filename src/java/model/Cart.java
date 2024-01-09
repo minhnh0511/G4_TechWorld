@@ -11,20 +11,17 @@ package model;
 public class Cart {
     private int cartId;
     private int userId;
-    private int productId;
 
     public Cart() {
     }
 
-    public Cart(int cartId, int userId, int productId) {
+    public Cart(int cartId, int userId) {
         this.cartId = cartId;
         this.userId = userId;
-        this.productId = productId;
     }
 
-    public Cart(int userId, int productId) {
+    public Cart(int userId) {
         this.userId = userId;
-        this.productId = productId;
     }
 
     public int getCartId() {
@@ -41,13 +38,5 @@ public class Cart {
 
     public void setUserId(int userId) {
         this.userId = userId;
-    }
-
-    public int getProductId() {
-        return productId;
-    }
-
-    public void setProductId(int productId) {
-        this.productId = productId;
     }
 }

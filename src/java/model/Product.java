@@ -12,40 +12,49 @@ public class Product {
     private int productID;
     private String productName;
     private int categoryId;
-    private int supplierId;
-    private String picture;
+    private int brandId;
+    private String image;
     private int quantityInStock;
     private double price;
+    private double discount;
     private int soldQuantity;
     private String description;
     private boolean status;
+    private String color;
+    private String capacity;
 
     public Product() {
     }
 
-    public Product(int productID, String productName, int categoryId, int supplierId, String picture, int quantityInStock, double price, int soldQuantity, String description, boolean status) {
+    public Product(int productID, String productName, int categoryId, int brandId, String image, int quantityInStock, double price, double discount, int soldQuantity, String description, boolean status, String color, String capacity) {
         this.productID = productID;
         this.productName = productName;
         this.categoryId = categoryId;
-        this.supplierId = supplierId;
-        this.picture = picture;
+        this.brandId = brandId;
+        this.image = image;
         this.quantityInStock = quantityInStock;
         this.price = price;
+        this.discount = discount;
         this.soldQuantity = soldQuantity;
         this.description = description;
         this.status = status;
+        this.color = color;
+        this.capacity = capacity;
     }
 
-    public Product(String productName, int categoryId, int supplierId, String picture, int quantityInStock, double price, int soldQuantity, String description, boolean status) {
+    public Product(String productName, int categoryId, int brandId, String image, int quantityInStock, double price, double discount, int soldQuantity, String description, boolean status, String color, String capacity) {
         this.productName = productName;
         this.categoryId = categoryId;
-        this.supplierId = supplierId;
-        this.picture = picture;
+        this.brandId = brandId;
+        this.image = image;
         this.quantityInStock = quantityInStock;
         this.price = price;
+        this.discount = discount;
         this.soldQuantity = soldQuantity;
         this.description = description;
         this.status = status;
+        this.color = color;
+        this.capacity = capacity;
     }
 
     public int getProductID() {
@@ -72,20 +81,20 @@ public class Product {
         this.categoryId = categoryId;
     }
 
-    public int getSupplierId() {
-        return supplierId;
+    public int getBrandId() {
+        return brandId;
     }
 
-    public void setSupplierId(int supplierId) {
-        this.supplierId = supplierId;
+    public void setBrandId(int brandId) {
+        this.brandId = brandId;
     }
 
-    public String getPicture() {
-        return picture;
+    public String getImage() {
+        return image;
     }
 
-    public void setPicture(String picture) {
-        this.picture = picture;
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public int getQuantityInStock() {
@@ -102,6 +111,14 @@ public class Product {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public double getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(double discount) {
+        this.discount = discount;
     }
 
     public int getSoldQuantity() {
@@ -127,6 +144,23 @@ public class Product {
     public void setStatus(boolean status) {
         this.status = status;
     }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(String capacity) {
+        this.capacity = capacity;
+    }
+
     
     
 }
