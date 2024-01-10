@@ -4,6 +4,8 @@
  */
 package model;
 
+import java.sql.Date;
+
 /**
  *
  * @author admin
@@ -20,13 +22,12 @@ public class Product {
     private int soldQuantity;
     private String description;
     private boolean status;
-    private String color;
-    private String capacity;
+    private Date updatedDate;
 
     public Product() {
     }
 
-    public Product(int productID, String productName, int categoryId, int brandId, String image, int quantityInStock, double price, double discount, int soldQuantity, String description, boolean status, String color, String capacity) {
+    public Product(int productID, String productName, int categoryId, int brandId, String image, int quantityInStock, double price, double discount, int soldQuantity, String description, boolean status, Date updatedDate) {
         this.productID = productID;
         this.productName = productName;
         this.categoryId = categoryId;
@@ -38,11 +39,10 @@ public class Product {
         this.soldQuantity = soldQuantity;
         this.description = description;
         this.status = status;
-        this.color = color;
-        this.capacity = capacity;
+        this.updatedDate = updatedDate;
     }
 
-    public Product(String productName, int categoryId, int brandId, String image, int quantityInStock, double price, double discount, int soldQuantity, String description, boolean status, String color, String capacity) {
+    public Product(String productName, int categoryId, int brandId, String image, int quantityInStock, double price, double discount, int soldQuantity, String description, boolean status, Date updatedDate) {
         this.productName = productName;
         this.categoryId = categoryId;
         this.brandId = brandId;
@@ -53,8 +53,7 @@ public class Product {
         this.soldQuantity = soldQuantity;
         this.description = description;
         this.status = status;
-        this.color = color;
-        this.capacity = capacity;
+        this.updatedDate = updatedDate;
     }
 
     public int getProductID() {
@@ -144,23 +143,14 @@ public class Product {
     public void setStatus(boolean status) {
         this.status = status;
     }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public String getCapacity() {
-        return capacity;
-    }
-
-    public void setCapacity(String capacity) {
-        this.capacity = capacity;
-    }
-
     
+    public Date getUpdatedDate() {
+        return updatedDate;
+    }
+
+    public void setUpdatedDate(Date updatedDate) {
+        this.updatedDate = updatedDate;
+    }
+
     
 }

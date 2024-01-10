@@ -13,6 +13,7 @@ import java.sql.Date;
 public class Feedback {
     private int feedbackId;
     private int userId;
+    private int productId;
     private String content;
     private int ratedStar;
     private Date time;
@@ -21,21 +22,22 @@ public class Feedback {
     public Feedback() {
     }
 
-    public Feedback(int feedbackId, int userId, String content, int ratedStar, Date time) {
+    public Feedback(int feedbackId, int userId, int productId, String content, int ratedStar, Date time) {
         this.feedbackId = feedbackId;
         this.userId = userId;
+        this.productId = productId;
         this.content = content;
         this.ratedStar = ratedStar;
         this.time = time;
     }
 
-    public Feedback(int userId, String content, int ratedStar, Date time) {
+    public Feedback(int userId, int productId, String content, int ratedStar, Date time) {
         this.userId = userId;
+        this.productId = productId;
         this.content = content;
         this.ratedStar = ratedStar;
         this.time = time;
     }
-
 
     public int getFeedbackId() {
         return feedbackId;
@@ -53,6 +55,14 @@ public class Feedback {
         this.userId = userId;
     }
 
+    public int getProductId() {
+        return productId;
+    }
+
+    public void setProductId(int productId) {
+        this.productId = productId;
+    }
+
     public String getContent() {
         return content;
     }
@@ -68,8 +78,7 @@ public class Feedback {
     public void setRatedStar(int ratedStar) {
         this.ratedStar = ratedStar;
     }
-    
-    
+
     public Date getTime() {
         return time;
     }
@@ -77,5 +86,7 @@ public class Feedback {
     public void setTime(Date time) {
         this.time = time;
     }
+
+    
 
 }
