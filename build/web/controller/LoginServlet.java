@@ -5,14 +5,9 @@
 
 package controller;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.Set;
-import java.util.TreeSet;
+
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -20,13 +15,10 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-import model.Permission;
-import model.User;
-import dal.DBContext;
+
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.http.HttpSession;
-import java.util.List;
-import model.Role;
+
 import dal.UserDAO;
 
 /**

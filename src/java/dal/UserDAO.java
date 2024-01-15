@@ -17,13 +17,13 @@ import model.Role;
  *
  * @author izayo
  */
-public class UserDAO {
+public class UserDAO extends DAO {
     public boolean isValidUser(HttpServletRequest request, String username, String password){
         try (Connection connection = new DBContext().getConnection();
               PreparedStatement preparedStatement = connection.prepareStatement("Select * from account where username = ? and password = ?")){
               preparedStatement.setString(1,username);
               preparedStatement.setString(2,password);
-              try (ResultSet resultSet = preparedStatement.executeQuery()) {
+             try (ResultSet resultSet = preparedStatement.executeQuery()) {
                   if(resultSet.next()) {
                       int userId = resultSet.getInt("user_id");
                       
