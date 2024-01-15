@@ -4,13 +4,14 @@
  */
 package dal;
 
+import dal.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 /**
  *
- * @author admin
+ * @author Mira1311
  */
 public class DAO extends DBContext {
 

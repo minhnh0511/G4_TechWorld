@@ -1,4 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/web/controller/LoginServlet.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/dal/BrandDAO.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/web/WEB-INF/web.xml</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/dal/DAO.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/web/controller/SettingServlet.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/model/Product.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/model/Profile.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/dal/DBContext.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/model/Delivery.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/nbproject/build-impl.xml</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/model/Category.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/web/view/css/main.css</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/model/CartItem.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/model/Order.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/model/Role.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/model/Setting.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/model/Account.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/web/view/header.jsp</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/model/Feedback.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/model/Post.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/model/Permission.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/model/User.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/model/Brand.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/model/OrderDetail.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/web/view/login.jsp</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/model/Cart.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/dal/CategoryDAO.java</file>
+            <file>file:/D:/Yuka/Code/G4_TechWorld/src/java/model/Blog.java</file>
+        </group>
+    </open-files>
 </project-private>

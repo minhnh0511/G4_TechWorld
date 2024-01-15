@@ -4,13 +4,14 @@
  */
 package dal;
 
+import dal.*;
 import java.util.ArrayList;
 import java.util.List;
 import model.Brand;
 
 /**
  *
- * @author admin
+ * @author Mira1311
  */
 public class BrandDAO extends DAO{
     public List<Brand> getAllBrands() {

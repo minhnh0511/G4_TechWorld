@@ -4,13 +4,15 @@
  */
 package dal;
 
+import dal.*;
 import java.util.ArrayList;
 import java.util.List;
 import model.Category;
 
 /**
  *
- * @author admin
+ * @author Mira1311
+ * 
  */
 public class CategoryDAO extends DAO{
     public List<Category> getAllCategories() {

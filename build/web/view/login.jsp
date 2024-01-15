@@ -41,14 +41,14 @@
 				<div class="col-sm-4 col-sm-offset-1">
 					<div class="login-form"><!--login form-->
 						<h2>Login to your account</h2>
-						<form action="#">
-							<input type="text" placeholder="Name" />
-							<input type="email" placeholder="Email Address" />
+						<form action= "login" method="get">
+                                                    Username: <input type="text" name ="Username" required/>
+                                                    Password: <input type="password" name = "Password" required/>
 							<span>
 								<input type="checkbox" class="checkbox"> 
 								Keep me signed in
 							</span>
-							<button type="submit" class="btn btn-default">Login</button>
+							<input type="submit" value = "Login"> <br/>
 						</form>
 					</div><!--/login form-->
 				</div>
@@ -59,11 +59,11 @@
 					<div class="signup-form"><!--sign up form-->
 						<h2>New User Signup!</h2>
 						<form action="#">
-							<input type="text" placeholder="Name"/>
+							<input type="text" placeholder="Username"/>
 							<input type="email" placeholder="Email Address"/>
 							<input type="password" placeholder="Password"/>
 							<button type="submit" class="btn btn-default">Signup</button>
-						</form>
+						</form> 
 					</div><!--/sign up form-->
 				</div>
 			</div>

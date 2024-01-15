@@ -12,13 +12,16 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
+import java.util.List;
+import model.Setting;
 
 /**
  *
- * @author admin
+ * @author izayo
  */
-@WebServlet(name="LoginController", urlPatterns={"/login"})
-public class LoginController extends HttpServlet {
+@WebServlet(name="SettingServlet", urlPatterns={"/setting"})
+public class SettingServlet extends HttpServlet {
    
     /** 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
@@ -35,10 +38,10 @@ public class LoginController extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet LoginController</title>");  
+            out.println("<title>Servlet SettingServlet</title>");  
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet LoginController at " + request.getContextPath () + "</h1>");
+            out.println("<h1>Servlet SettingServlet at " + request.getContextPath () + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -55,8 +58,20 @@ public class LoginController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        processRequest(request, response);
+        List<Setting> settingsList = getSettingsFromDatabase();
+        request.setAttribute("settingsList", settingsList);
+        request.getRequestDispatcher("settings.jsp").forward(request, response);
     } 
+    private List<Setting> getSettingsFromDatabase() {
+        List<Setting> settingsList = new ArrayList<>();
+         settingsList.add(new Setting(1, "User 1 Description", "Setting 1", 101, true));
+        settingsList.add(new Setting(1, "User 1 Description", "Setting 2", 102, false));
+        settingsList.add(new Setting(2, "User 2 Description", "Setting 3", 103, true));
+        settingsList.add(new Setting(2, "User 2 Description", "Setting 4", 104, false));
+        settingsList.add(new Setting(3, "User 3 Description", "Setting 5", 105, true));
+        
+        return settingsList;
+    }
 
     /** 
      * Handles the HTTP <code>POST</code> method.
